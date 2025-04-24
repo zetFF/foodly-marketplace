@@ -9,8 +9,8 @@ import Index from "./pages/Index";
 import About from "./pages/About";
 import Restaurant from "./pages/Restaurant";
 import NotFound from "./pages/NotFound";
-import SignIn from "./pages/SignIn";
-import Register from "./pages/Register";
+// import SignIn from "./pages/SignIn";
+// import Register from "./pages/Register";
 import Profile from "./pages/Profile";
 import CustomerFeatures from "./pages/CustomerFeatures";
 
@@ -27,8 +27,8 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/about" element={<About />} />
             <Route path="/restaurant/:id" element={<Restaurant />} />
-            <Route path="/signin" element={<SignIn />} />
-            <Route path="/register" element={<Register />} />
+            {/* <Route path="/signin" element={<SignIn />} />
+            <Route path="/register" element={<Register />} /> */}
             <Route path="/profile" element={<Profile />} />
             <Route path="/customer-features" element={<CustomerFeatures />} />
             <Route path="/product/:id" element={<NotFound />} />

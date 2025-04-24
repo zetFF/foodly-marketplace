@@ -1,13 +1,13 @@
-
-import React, { useState, useEffect } from 'react';
-import RestaurantCard from './RestaurantCard';
+import React, { useState, useEffect } from "react";
+import RestaurantCard from "./RestaurantCard";
 
 // Sample restaurant data
 const restaurants = [
   {
     id: 1,
     name: "Burger & Beyond",
-    image: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=2664&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=2664&auto=format&fit=crop",
     cuisineType: "American",
     rating: 4.8,
     reviewCount: 243,
@@ -22,7 +22,8 @@ const restaurants = [
   {
     id: 2,
     name: "Sushi Paradise",
-    image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2670&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2670&auto=format&fit=crop",
     cuisineType: "Japanese",
     rating: 4.9,
     reviewCount: 186,
@@ -37,7 +38,8 @@ const restaurants = [
   {
     id: 3,
     name: "Pizza Roma",
-    image: "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2340&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2340&auto=format&fit=crop",
     cuisineType: "Italian",
     rating: 4.6,
     reviewCount: 318,
@@ -52,7 +54,8 @@ const restaurants = [
   {
     id: 4,
     name: "Taco Fiesta",
-    image: "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=2380&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=2380&auto=format&fit=crop",
     cuisineType: "Mexican",
     rating: 4.7,
     reviewCount: 154,
@@ -67,7 +70,8 @@ const restaurants = [
   {
     id: 5,
     name: "Thai Orchid",
-    image: "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?q=80&w=2670&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?q=80&w=2670&auto=format&fit=crop",
     cuisineType: "Thai",
     rating: 4.5,
     reviewCount: 208,
@@ -82,7 +86,8 @@ const restaurants = [
   {
     id: 6,
     name: "Golden Dragon",
-    image: "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2429&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2429&auto=format&fit=crop",
     cuisineType: "Chinese",
     rating: 4.4,
     reviewCount: 276,
@@ -98,7 +103,8 @@ const restaurants = [
   {
     id: 7,
     name: "Mediterranean Delight",
-    image: "https://images.unsplash.com/photo-1615361200141-f45961a70238?q=80&w=2664&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1615361200141-f45961a70238?q=80&w=2664&auto=format&fit=crop",
     cuisineType: "Mediterranean",
     rating: 4.7,
     reviewCount: 189,
@@ -113,7 +119,8 @@ const restaurants = [
   {
     id: 8,
     name: "Seoul BBQ House",
-    image: "https://images.unsplash.com/photo-1590330813083-fc22d4b6a2e0?q=80&w=2674&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1590330813083-fc22d4b6a2e0?q=80&w=2674&auto=format&fit=crop",
     cuisineType: "Korean",
     rating: 4.6,
     reviewCount: 205,
@@ -128,7 +135,8 @@ const restaurants = [
   {
     id: 9,
     name: "Farm to Table",
-    image: "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=2574&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=2574&auto=format&fit=crop",
     cuisineType: "American",
     rating: 4.8,
     reviewCount: 176,
@@ -143,7 +151,8 @@ const restaurants = [
   {
     id: 10,
     name: "Pho Delicious",
-    image: "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=2574&auto=format&fit=crop",
+    image:
+      "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=2574&auto=format&fit=crop",
     cuisineType: "Vietnamese",
     rating: 4.5,
     reviewCount: 143,
@@ -154,16 +163,18 @@ const restaurants = [
     promotion: null,
     featured: false,
     isNew: false,
-  }
+  },
 ];
 
 interface FeaturedRestaurantsProps {
   columns?: 2 | 3 | 4 | 5 | 6;
 }
 
-const FeaturedRestaurants: React.FC<FeaturedRestaurantsProps> = ({ columns = 6 }) => {
+const FeaturedRestaurants: React.FC<FeaturedRestaurantsProps> = ({
+  columns = 6,
+}) => {
   const [isVisible, setIsVisible] = useState(false);
-  
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -174,10 +185,10 @@ const FeaturedRestaurants: React.FC<FeaturedRestaurantsProps> = ({ columns = 6 }
       },
       { threshold: 0.1 }
     );
-    
-    const element = document.getElementById('featured-restaurants');
+
+    const element = document.getElementById("featured-restaurants");
     if (element) observer.observe(element);
-    
+
     return () => {
       if (element) observer.unobserve(element);
     };
@@ -186,12 +197,18 @@ const FeaturedRestaurants: React.FC<FeaturedRestaurantsProps> = ({ columns = 6 }
   // Map columns to specific tailwind classes
   const getGridColumns = () => {
     switch (columns) {
-      case 2: return 'grid-cols-1 sm:grid-cols-2';
-      case 3: return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3';
-      case 4: return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4';
-      case 5: return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5';
-      case 6: return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6';
-      default: return 'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6';
+      case 2:
+        return "grid-cols-1 sm:grid-cols-2";
+      case 3:
+        return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3";
+      case 4:
+        return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
+      case 5:
+        return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5";
+      case 6:
+        return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6";
+      default:
+        return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6";
     }
   };
 
@@ -199,27 +216,35 @@ const FeaturedRestaurants: React.FC<FeaturedRestaurantsProps> = ({ columns = 6 }
     <div id="featured-restaurants" className="py-16 bg-foodly-50">
       <div className="foodly-container">
         <div className="mb-12 text-center">
-          <h2 className={`text-3xl font-bold text-foodly-900 mb-3 transition-all duration-700 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
-            Popular Restaurants Near You
+          <h2
+            className={`text-3xl font-bold text-foodly-900 mb-3 transition-all duration-700 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}>
+            Restoran Populer di Dekat Anda
           </h2>
-          <p className={`text-foodly-600 max-w-2xl mx-auto transition-all duration-700 delay-100 ${
-            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-          }`}>
-            Discover the most loved restaurants in your area with the fastest delivery times
+          <p
+            className={`text-foodly-600 max-w-2xl mx-auto transition-all duration-700 delay-100 ${
+              isVisible
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-8"
+            }`}>
+            Temukan restoran yang paling disukai di daerah Anda dengan waktu
+            pengantaran tercepat
           </p>
         </div>
-        
+
         <div className={`grid ${getGridColumns()} gap-4`}>
           {restaurants.map((restaurant, index) => (
-            <div 
+            <div
               key={restaurant.id}
               className={`transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'
+                isVisible
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-12"
               }`}
-              style={{ transitionDelay: `${100 + index * 100}ms` }}
-            >
+              style={{ transitionDelay: `${100 + index * 100}ms` }}>
               <RestaurantCard {...restaurant} />
             </div>
           ))}
