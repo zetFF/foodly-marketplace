@@ -22,7 +22,6 @@ interface Product {
   badges?: string[];
 }
 
-// Sample product data
 const featuredProducts: Product[] = [
   {
     id: 10,
@@ -106,7 +105,7 @@ const featuredProducts: Product[] = [
 interface ProductGridProps {
   title: string;
   subtitle?: string;
-  columns?: 2 | 3 | 4 | 6;
+  columns?: 2 | 3 | 4 | 5 | 6;
   aspectRatio?: "square" | "portrait" | "landscape";
   variant?: "default" | "minimal" | "featured" | "compact" | "horizontal";
   limit?: number;
@@ -152,10 +151,11 @@ const ProductGrid: React.FC<ProductGridProps> = ({
   const getGridCols = () => {
     switch (columns) {
       case 2: return "grid-cols-1 sm:grid-cols-2";
+      case 3: return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3";
       case 4: return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4";
+      case 5: return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5";
       case 6: return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6";
-      case 3:
-      default: return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3";
+      default: return "grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5";
     }
   };
 
