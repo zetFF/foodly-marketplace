@@ -7,7 +7,7 @@ const restaurants = [
     id: 1,
     name: "Burger & Beyond",
     image:
-      "https://images.unsplash.com/photo-1565299507177-b0ac66763828?q=80&w=2664&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473331/fg6hwmc69yklyaq21p31.jpg",
     cuisineType: "American",
     rating: 4.8,
     reviewCount: 243,
@@ -23,7 +23,7 @@ const restaurants = [
     id: 2,
     name: "Sushi Paradise",
     image:
-      "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?q=80&w=2670&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473329/z3opmmkqr2r8thctz34b.jpg",
     cuisineType: "Japanese",
     rating: 4.9,
     reviewCount: 186,
@@ -39,7 +39,7 @@ const restaurants = [
     id: 3,
     name: "Pizza Roma",
     image:
-      "https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?q=80&w=2340&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473328/z9kjrjpot0anphbecah2.jpg",
     cuisineType: "Italian",
     rating: 4.6,
     reviewCount: 318,
@@ -55,7 +55,7 @@ const restaurants = [
     id: 4,
     name: "Taco Fiesta",
     image:
-      "https://images.unsplash.com/photo-1565299585323-38d6b0865b47?q=80&w=2380&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473327/xk1lrfa2xwjmyqrubjjm.jpg",
     cuisineType: "Mexican",
     rating: 4.7,
     reviewCount: 154,
@@ -71,7 +71,7 @@ const restaurants = [
     id: 5,
     name: "Thai Orchid",
     image:
-      "https://images.unsplash.com/photo-1569562211093-4ed0d0758f12?q=80&w=2670&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473327/ch5iynaw5sk5rivyfvdj.jpg",
     cuisineType: "Thai",
     rating: 4.5,
     reviewCount: 208,
@@ -87,7 +87,7 @@ const restaurants = [
     id: 6,
     name: "Golden Dragon",
     image:
-      "https://images.unsplash.com/photo-1563245372-f21724e3856d?q=80&w=2429&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473326/ncimjuwmar3vuawmdumi.jpg",
     cuisineType: "Chinese",
     rating: 4.4,
     reviewCount: 276,
@@ -104,7 +104,7 @@ const restaurants = [
     id: 7,
     name: "Mediterranean Delight",
     image:
-      "https://images.unsplash.com/photo-1615361200141-f45961a70238?q=80&w=2664&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473326/akqxxgqmirpxmcyjeous.jpg",
     cuisineType: "Mediterranean",
     rating: 4.7,
     reviewCount: 189,
@@ -120,7 +120,7 @@ const restaurants = [
     id: 8,
     name: "Seoul BBQ House",
     image:
-      "https://images.unsplash.com/photo-1590330813083-fc22d4b6a2e0?q=80&w=2674&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473325/a4xsjbdxkp15qtiyt5eh.jpg",
     cuisineType: "Korean",
     rating: 4.6,
     reviewCount: 205,
@@ -136,7 +136,7 @@ const restaurants = [
     id: 9,
     name: "Farm to Table",
     image:
-      "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=2574&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473325/e5hfaj2yaxlxvty8uytz.jpg",
     cuisineType: "American",
     rating: 4.8,
     reviewCount: 176,
@@ -152,7 +152,7 @@ const restaurants = [
     id: 10,
     name: "Pho Delicious",
     image:
-      "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?q=80&w=2574&auto=format&fit=crop",
+      "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473324/vsipsjgfrysqcrgzhtjk.jpg",
     cuisineType: "Vietnamese",
     rating: 4.5,
     reviewCount: 143,

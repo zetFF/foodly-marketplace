@@ -96,7 +96,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation Menu */}
-            <div className="hidden lg:block">
+            {/* <div className="hidden lg:block">
               <NavigationMenu>
                 <NavigationMenuList>
                   <NavigationMenuItem>
@@ -234,11 +234,11 @@ const Navbar = () => {
                   </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
-            </div>
+            </div> */}
 
             {/* Search, Wishlist, Cart, and User */}
             <div className="hidden md:flex items-center space-x-2">
-              <TooltipProvider>
+              {/* <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Button
@@ -252,11 +252,11 @@ const Navbar = () => {
                     <p>Search</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
+              </TooltipProvider> */}
 
               {isLoggedIn && (
                 <>
-                  <TooltipProvider>
+                  {/* <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <Link to="/profile?tab=wishlist">
@@ -272,8 +272,8 @@ const Navbar = () => {
                         <p>Wishlist</p>
                       </TooltipContent>
                     </Tooltip>
-                  </TooltipProvider>
-
+                  </TooltipProvider> */}
+                  {/* 
                   <TooltipProvider>
                     <Tooltip>
                       <TooltipTrigger asChild>
@@ -291,10 +291,10 @@ const Navbar = () => {
                         <p>Notifications</p>
                       </TooltipContent>
                     </Tooltip>
-                  </TooltipProvider>
+                  </TooltipProvider> */}
                 </>
               )}
-
+              {/* 
               <TooltipProvider>
                 <Tooltip>
                   <TooltipTrigger asChild>
@@ -314,7 +314,7 @@ const Navbar = () => {
                     <p>Shopping Cart ({cartItemCount})</p>
                   </TooltipContent>
                 </Tooltip>
-              </TooltipProvider>
+              </TooltipProvider> */}
 
               {isLoggedIn ? (
                 <DropdownMenu>
@@ -377,10 +377,10 @@ const Navbar = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
               ) : (
-                <Link to="/signin">
+                <Link to="/profile">
                   <Button className="rounded-full bg-foodly-accent hover:bg-foodly-accent/90 text-white">
                     <LogIn className="h-4 w-4 mr-2" />
-                    Sign In
+                   Profile
                   </Button>
                 </Link>
               )}
@@ -538,7 +538,7 @@ const Navbar = () => {
 
                 {!isLoggedIn && (
                   <Link
-                    to="/signin"
+                    to="/profile"
                     className="block flex-1"
                     onClick={() => setIsMobileMenuOpen(false)}>
                     <Button className="w-full bg-foodly-accent hover:bg-foodly-accent/90 text-white rounded-full">

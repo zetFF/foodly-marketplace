@@ -13,14 +13,14 @@ const Profile = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <div className="flex-1 foodly-container py-12">
-        <h1 className="text-3xl font-bold text-foodly-900 mb-8">My Account</h1>
+        <h1 className="text-3xl font-bold text-foodly-900 mb-8">Profile</h1>
         
         <Tabs defaultValue="profile" className="w-full">
           <TabsList className="mb-6">
-            <TabsTrigger value="profile">Profile</TabsTrigger>
-            <TabsTrigger value="orders">Orders</TabsTrigger>
+            <TabsTrigger value="profile">profil</TabsTrigger>
+            <TabsTrigger value="orders">pesanan</TabsTrigger>
             <TabsTrigger value="wishlist">Wishlist</TabsTrigger>
-            <TabsTrigger value="settings">Settings</TabsTrigger>
+            <TabsTrigger value="settings">pengaturan</TabsTrigger>
           </TabsList>
           
           <TabsContent value="profile">
