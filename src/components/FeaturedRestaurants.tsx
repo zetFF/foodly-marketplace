@@ -5,10 +5,10 @@ import RestaurantCard from "./RestaurantCard";
 const restaurants = [
   {
     id: 1,
-    name: "Burger & Beyond",
+    name: "Martabak mini",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473331/fg6hwmc69yklyaq21p31.jpg",
-    cuisineType: "American",
+    cuisineType: "Indonesian",
     rating: 4.8,
     reviewCount: 243,
     deliveryTime: "15-25 min",
@@ -21,10 +21,10 @@ const restaurants = [
   },
   {
     id: 2,
-    name: "Sushi Paradise",
+    name: "Pizza",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473313/rln6bywafsepmdfpg7ro.jpg",
-    cuisineType: "Japanese",
+    cuisineType: "Indonesian",
     rating: 4.9,
     reviewCount: 186,
     deliveryTime: "25-35 min",
@@ -37,10 +37,10 @@ const restaurants = [
   },
   {
     id: 3,
-    name: "Pizza Roma",
+    name: "Donat Abon",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473328/z9kjrjpot0anphbecah2.jpg",
-    cuisineType: "Italian",
+    cuisineType: "Indonesian",
     rating: 4.6,
     reviewCount: 318,
     deliveryTime: "20-30 min",
@@ -53,10 +53,10 @@ const restaurants = [
   },
   {
     id: 4,
-    name: "Taco Fiesta",
+    name: "Pizza Mozarela",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473311/k0mlfjcrvgijaodcxvsj.jpg",
-    cuisineType: "Mexican",
+    cuisineType: "Indonesian",
     rating: 4.7,
     reviewCount: 154,
     deliveryTime: "15-25 min",
@@ -69,10 +69,10 @@ const restaurants = [
   },
   {
     id: 5,
-    name: "kue lumpur, roti calzon",
+    name: "kue lumpur",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473327/ch5iynaw5sk5rivyfvdj.jpg",
-    cuisineType: "Thai",
+    cuisineType: "Indonesian",
     rating: 4.5,
     reviewCount: 208,
     deliveryTime: "25-40 min",
@@ -85,10 +85,10 @@ const restaurants = [
   },
   {
     id: 6,
-    name: "Golden Dragon",
+    name: "Donat meses",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473326/ncimjuwmar3vuawmdumi.jpg",
-    cuisineType: "Chinese",
+    cuisineType: "Indonesian",
     rating: 4.4,
     reviewCount: 276,
     deliveryTime: "20-35 min",
@@ -105,7 +105,7 @@ const restaurants = [
     name: "Roll bread coklat keju",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473312/iiij54ojdaranwfd9nhs.jpg",
-    cuisineType: "Mediterranean",
+    cuisineType: "Indonesian",
     rating: 4.7,
     reviewCount: 189,
     deliveryTime: "20-35 min",
@@ -118,10 +118,10 @@ const restaurants = [
   },
   {
     id: 8,
-    name: "Seoul BBQ House",
+    name: "Lemper ",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473325/a4xsjbdxkp15qtiyt5eh.jpg",
-    cuisineType: "Korean",
+    cuisineType: "Indonesian",
     rating: 4.6,
     reviewCount: 205,
     deliveryTime: "30-45 min",
@@ -134,10 +134,10 @@ const restaurants = [
   },
   {
     id: 9,
-    name: "Farm to Table",
+    name: "Kue lumpur",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473325/e5hfaj2yaxlxvty8uytz.jpg",
-    cuisineType: "American",
+    cuisineType: "Indonesian",
     rating: 4.8,
     reviewCount: 176,
     deliveryTime: "25-40 min",
@@ -150,10 +150,10 @@ const restaurants = [
   },
   {
     id: 10,
-    name: "Pho Delicious",
+    name: "Pizza",
     image:
       "https://res.cloudinary.com/dmq4cmdqg/image/upload/v1745473324/vsipsjgfrysqcrgzhtjk.jpg",
-    cuisineType: "Vietnamese",
+    cuisineType: "Indonesian",
     rating: 4.5,
     reviewCount: 143,
     deliveryTime: "20-30 min",
